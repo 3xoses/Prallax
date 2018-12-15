@@ -1,0 +1,202 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Montserrat;
+  }
+
+  h1 img {
+      width: 338px;
+      height: 145px;
+  }
+
+  nav ul  {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      color: white;
+      margin-top: 20px;
+  }
+
+  nav ul li {
+      margin-left:20px;
+      margin-top: 20px;
+  }
+
+  nav ul li:hover {
+      font-weight: bold;
+  }
+
+  nav ul li img {
+      width: 338px;
+      height: 145px;
+  }
+
+  .images{
+      display: flex;
+  }
+
+  .images a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+    width: 350px;
+    height: 200px;
+  }
+
+  .images a p {
+    background: rgba(204,204,204,1);
+  }
+
+  .images a:nth-child(1){
+    background: url(img/fitness.jpg);
+    opacity: 0.5;
+  }
+  .images a:nth-child(1):hover{
+    transform: scale(1.05);
+    transition: 3s;
+    opacity: 1;
+}
+
+  .images a:nth-child(2){
+    background: url(img/shopping.png);
+    background-size: 339px;
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0.5;
+  }
+
+  .images a:nth-child(2):hover{
+    transform: scale(1.05);
+    transition: 3s;
+    opacity: 1;
+  }
+
+  .images a:nth-child(3){
+    background: url(img/mother.jpg);
+    opacity: 0.5;
+    }
+
+  .images a:nth-child(3):hover{
+    transform: scale(1.05);
+    transition: 3s;
+    opacity: 1;
+    }
+
+  
+  section.module h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgba(204,204,204,1);
+  }
+  
+  section.module p {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;	
+  }
+  
+  section.module p:last-child {
+    margin-bottom: 0;
+  }
+  
+  section.module.content {
+    padding: 60px 0;
+    text-align: left;
+  }
+  
+  section.module.parallax {
+    height: 800px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  section.module.parallax h1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 48px;
+    line-height: 400px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  section.module.parallax h3 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 150px;
+    line-height: 800px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  section.module.parallax-1 {
+    background-image: url(img/obrazek1.jpg);
+  }
+  
+  section.module.parallax-2 {
+    background-image: url(img/obrazek2.jpg);
+  }
+  
+  section.module.parallax-3 {
+    background-image: url(img/obrazek3.jpg);
+  }
+
+  img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      float: left;
+      margin-right: 13px;
+  }
+
+  .card1, .card2, .card3, .card4 {
+      display: inline-block;
+      text-align: justify;
+  }
+
+  .card1 p {
+      float: right;
+  }
+
+  a img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .icons {
+      display: flex;
+      justify-content: center;
+  }
+
+
+  @media all and (min-width: 600px) {
+    section.module h2 {
+    font-size: 38px;
+    }
+
+    section.module a {
+    font-size: 22px;
+    }
+
+    section.module.parallax h1 {
+    font-size: 82px;
+    }
+
+}
+
+@media all and (min-width: 960px) {
+    section.module.parallax h1 {
+    font-size: 145px;
+    }
+}
+
+@media all and (max-width: 680px) {
+     section.module.content {
+     text-align: center;
+     }
+}
